@@ -42,7 +42,7 @@ def check(cookie):
 
 
 def login(username, password):
-    device_token = "6207FC41A146CD4DC55A38021C1865FC"
+    device_token = "D313F27F6E26221B18E41D07B3487FA4"
     timestamp = int(time.time() * 1000)
     sign = md5_hex(f"{nonce}{timestamp}{device_token}{SALT}", 'Upper')
     headers['sfsecurity'] = f'nonce={nonce}&timestamp={timestamp}&devicetoken={device_token}&sign={sign}'
